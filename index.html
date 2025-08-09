@@ -72,22 +72,23 @@
         }
 
         .shell-container {
-            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px 60px;
             width: 80%;
-            margin: 0 auto;
             max-width: 1000px;
-            min-height: 80vh;
+            margin: 0 auto;
+            padding: 40px 0;
+            background: white;
         }
 
         .shell {
-            position: relative;
-            display: inline-block;
-            margin: 40px;
+            cursor: pointer;
         }
 
         .shell img {
             width: 80px;
-            cursor: pointer;
             display: block;
         }
 
@@ -108,6 +109,10 @@
         .shell:hover .caption {
             display: block;
         }
+        .shell {
+            position: relative;
+        }
+
     </style>
 </head>
 
@@ -117,10 +122,10 @@
 
     <nav class="navstyle">
         <ul class="ulstyle">
-            <li class="listyle"><a href="#">Home</a></li>
-            <li class="listyle"><a href="#">About</a></li>
+            <li class="listyle"><a href="../index.html">Home</a></li>
+            <li class="listyle"><a href="../about.html">About</a></li>
             <!--<li class="listyle"><a href="#">CV</a></li> -->
-            <li class="listyle"><a href="#">Contact</a></li>
+            <li class="listyle"><a href="../contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -129,7 +134,7 @@
     </header>
 
     <div class="shell-container">
-        <!-- Add new shells at the top here -->
+        <!-- essays -->
         <div class="shell">
             <a href="essays/essay1.html">
                 <img src="images/sowerby-mineral-5.png" alt="sowerby-mineral-5">
