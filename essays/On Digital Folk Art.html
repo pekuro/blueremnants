@@ -115,8 +115,14 @@
         }
 
         .reddit-embed-bq {
-           min-width: 100%; 
            width: 100%; 
+           min-height: 500px;
+        }
+
+        @media (max-width: 600px) {
+            .reddit-embed-bq {
+                min-height: 800px;
+            }
         }
 
 
